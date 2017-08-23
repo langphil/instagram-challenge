@@ -1,10 +1,12 @@
 language: ruby
 rvm:
- - 2.4.1
-
-services:
-  - postgresql
-
+  - "2.2.0"
+env:
+  - DB=mysql
+script:
+  - RAILS_ENV=test bundle exec rake db:migrate --trace
+  - bundle exec rake db:test:prepare
+  - bundle exec rspec spec/
 before_script:
-  - psql -c 'create database pgapp_test;' -U postgres
-  - bin/rails test
+  - mysql -e 'create database myapp_test'
+bundler_args: --binstubs=./bundler_stubs
