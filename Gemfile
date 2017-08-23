@@ -7,6 +7,8 @@ end
 
 # Use Bootstrap for CSS stlying
 gem 'bootstrap', '~> 4.0.0.beta'
+# Use Devise for user management
+gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
 # Use pg as the database for Active Record
@@ -40,7 +42,11 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+<<<<<<< HEAD
   gem 'rspec'
+=======
+  gem 'rspec-rails'
+>>>>>>> users
   gem "rubocop", "0.48.1"
   gem "rubocop-rails"
 end
