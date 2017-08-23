@@ -69,15 +69,12 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
-<<<<<<< HEAD
-=======
     devise (4.3.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0, < 5.2)
       responders
       warden (~> 1.2.3)
->>>>>>> users
     diff-lcs (1.3)
     erubi (1.6.1)
     execjs (2.7.0)
@@ -152,16 +149,9 @@ GEM
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
-<<<<<<< HEAD
-    rspec (3.6.0)
-      rspec-core (~> 3.6.0)
-      rspec-expectations (~> 3.6.0)
-      rspec-mocks (~> 3.6.0)
-=======
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
->>>>>>> users
     rspec-core (3.6.0)
       rspec-support (~> 3.6.0)
     rspec-expectations (3.6.0)
@@ -170,8 +160,6 @@ GEM
     rspec-mocks (3.6.0)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.6.0)
-<<<<<<< HEAD
-=======
     rspec-rails (3.6.1)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
@@ -180,7 +168,6 @@ GEM
       rspec-expectations (~> 3.6.0)
       rspec-mocks (~> 3.6.0)
       rspec-support (~> 3.6.0)
->>>>>>> users
     rspec-support (3.6.0)
     rubocop (0.48.1)
       parser (>= 2.3.3.1, < 3.0)
@@ -258,11 +245,7 @@ DEPENDENCIES
   puma (~> 3.7)
   rails (~> 5.1.3)
   rails_12factor
-<<<<<<< HEAD
-  rspec
-=======
   rspec-rails
->>>>>>> users
   rubocop (= 0.48.1)
   rubocop-rails
   sass-rails (~> 5.0)
