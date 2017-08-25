@@ -2,21 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .img-box {
+  background-color: #FFFFFF;
   border: #e6e6e6 1px solid;
   margin-bottom: 3em;
 
   p {
     padding: 0.8em 0 0 0.8em;
   }
-}
 
-.img-bottom {
-
-  .img-caption {
-    padding-left: 0.8em;
+  .img-head {
+    background-color: #FFFFFF;
   }
 
-  .icon {
-      text-decoration: none;
+  .img-bottom {
+    background-color: #FFFFFF;
+
+    .img-caption {
+      padding-left: 0.8em;
+    }
+
+    .icon {
+        text-decoration: none;
+    }
   }
 }
