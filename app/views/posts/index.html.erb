@@ -3,14 +3,14 @@
     <% @posts.each do |post| %>
       <section class="img-box">
         <div class="img-head">
-          <p>User</p>
+          <p><strong><%= post.user.user_name %></strong></p>
         </div>
         <div class="img-body">
           <%=link_to (image_tag post.image.url(:medium), class:'img-fluid'), post_path(post) %>
         </div>
         <div class="img-bottom">
           <p>Like</p>
-          <p class="img-caption"><strong>@user</strong> <%= post.caption %></p>
+          <p class="img-caption"><strong><%= post.user.user_name %></strong> <%= post.caption %></p>
         </div>
       </section>
     <% end %>
