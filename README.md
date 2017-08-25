@@ -4,11 +4,11 @@ Instagram knock off
 
 ## Functionality
 - [x] User signup / in / out / edit / delete
+- [x] User can post photos
+- [x] Home feed of photos
+- [x] User account feed
 
 ## To do
-- [ ] Home feed of photos
-- [ ] User account feed
-- [ ] User can post photos
 - [ ] User can write comments
 - [ ] User can like photos
 - [ ] User can follow other users
