@@ -38,6 +38,8 @@ RSpec.feature "Edit", type: :feature do
     sign_up
     click_link 'Account'
     fill_in 'user_first_name', with: 'Test'
+    fill_in 'user_password', with: '456789'
+    fill_in 'user_password_confirmation', with: '456789'
     fill_in 'user_current_password', with: '456789'
     click_button 'Update'
     expect(page).to have_content("Your account has been updated successfully.")
