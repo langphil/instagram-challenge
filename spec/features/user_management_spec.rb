@@ -45,3 +45,21 @@ RSpec.feature "Edit", type: :feature do
     expect(page).to have_content("Your account has been updated successfully.")
   end
 end
+
+RSpec.feature "Profile", type: :feature do
+  scenario "User has a profile page" do
+    sign_up
+    click_link 'Profile'
+    expect(page).to have_content("@Barney")
+  end
+end
+
+RSpec.feature "Profile Index", type: :feature do
+  scenario "User can visit an index page of all users" do
+    sign_up_two
+    click_link 'Logout'
+    sign_up
+    click_link 'Friends'
+    expect(page).to have_content("Gandalf")
+  end
+end
