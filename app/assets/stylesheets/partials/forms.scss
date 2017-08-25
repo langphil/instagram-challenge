@@ -1,0 +1,19 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.field {
+  margin-bottom: 1.2em;
+
+  input {
+    padding: 0.6em;
+  }
+}
+
+.actions {
+  text-align: center;
+
+  input {
+    background: none;
+  }
+}
