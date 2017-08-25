@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+form {
+  text-align: center;
+}
+
 .field {
   margin-bottom: 1.2em;
 
@@ -15,5 +19,6 @@
 
   input {
     background: none;
+    margin-bottom: 1.2em;
   }
 }
