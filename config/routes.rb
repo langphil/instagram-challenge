@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get 'welcome/index'
   root 'welcome#index'
   resources :welcome
+  resources :users
 
 end

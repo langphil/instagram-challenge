@@ -1,0 +1,5 @@
+<% @users.each do |user| %>
+  <li><%= link_to user.user_name, user %></li>
+<% end %>
+
+<%= link_to "show_index_of_users", users_path %>
