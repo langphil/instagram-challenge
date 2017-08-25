@@ -2,13 +2,17 @@
   <h2>New post</h2>
 
   <%= form_for(@post, multipart: true) do |f| %>
-    <div class="field">
+    <div class="field" style="padding-left: 8em;">
       <%= f.file_field :image %>
-      <%= f.text_field :caption %>
-    </div><br>
+    </div>
+    <div class="field">
+      <%= f.text_field :caption, placeholder: 'Image caption' %>
+    </div>
     <div class="actions">
       <%= f.submit 'Upload' %>
-      <!-- <%= link_to 'Return to photos', posts_path, class: 'button' %> -->
+    </div>
+    <div>
+      <%= link_to 'Return to photos', posts_path, class: 'button' %>
     </div>
   <% end %>
 </div>

@@ -11,15 +11,24 @@
   li {
     list-style-type: none;
   }
-}
 
-.nav-icon {
-  margin-left: 5em;
-}
+  .nav-icon {
+    margin-left: 5em;
+  }
 
-.nav-btn {
-  background: none;
-  border: none;
-  box-shadow: none;
-  margin-right: 5em;
+  .nav-btn {
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin-right: 5em;
+
+    a {
+      margin-right: 0.6em;
+      text-decoration: none;
+    }
+
+    .icon {
+      color: #313131;
+    }
+  }
 }

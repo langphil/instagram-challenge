@@ -11,27 +11,20 @@
   </head>
   <body>
     <nav class="nav d-flex justify-content-end">
-      <li class="mr-auto p-2">
+      <li class="mr-auto p-2 nav-icon">
         <a class="inline active" href="/">
-          <img class="nav-icon" style="width:30px;" src="https://maxcdn.icons8.com/Share/icon/win8/Logos//instagram_new1600.png" alt="Instagram Icon">
+          <img style="width:130px;" src="http://i.imgur.com/BECFNLK.png" alt="Instagram">
         </a>
       </li>
-      <li class="p-2">
-        <div class="dropdown">
-          <button class="nav-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Account
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <%= render 'devise/menu/login_items' %>
-            <%= render 'devise/menu/registration_items' %>
-          </div>
-        </div>
+      <li class="p-2 nav-btn">
+        <%= link_to "", post_path(:new), class: "fa fa-plus-square-o fa-2x icon" %>
+        <%= link_to "", current_user, class: "fa fa-user fa-2x icon", id: "profile" %>
       </li>
     </nav>
     <div class="container">
       <div class="center-box">
-        <p class="notice"><%= notice %></p>
         <p class="alert"><%= alert %></p>
+        <p class="notice"><%= notice %></p>
       </div>
       <%= yield %>
     </div>

@@ -2,14 +2,14 @@
   <div class="row justify-content-center">
     <section class="img-box">
       <div class="img-head">
-        <p><strong>@<%= @post.user.user_name %></strong></p>
+        <p><strong><%= @post.user.user_name %></strong></p>
       </div>
       <div class="img-body">
         <%= image_tag @post.image.url(:medium), class: "img-fluid" %>
       </div>
       <div class="img-bottom">
         <% if current_user.id == @post.user.id %>
-          <p class="text-align: right;"><%= link_to "", post_path(@post), class: "fa fa-trash fa-2x icon", method: :delete, data: { confirm: "Are you sure you want to delete this post?" } %></p>
+          <p class="text-align: right;"><%= link_to "", post_path(@post), id: "bin", class: "fa fa-trash fa-2x icon", method: :delete, data: { confirm: "Are you sure you want to delete this post?" } %></p>
         <% end %>
         <p class="img-caption"><strong>@user</strong> <%= @post.caption %></p>
       </div>

@@ -1,11 +1,8 @@
 <% if user_signed_in? %>
   <span class="dropdown-item"><%= link_to('Account', edit_user_registration_path) %></span>
-<% else %>
-  <span class="dropdown-item"><%= link_to('Register', new_user_registration_path) %></span>
-<% end %>
-
-<% if user_signed_in? %>
+  <span class="dropdown-item"><%= link_to "Friends", users_path %></span>
   <span class="dropdown-item"><%= link_to('Logout', destroy_user_session_path, method: :delete) %></span>
 <% else %>
+  <span class="dropdown-item"><%= link_to('Register', new_user_registration_path) %></span>
   <span class="dropdown-item"><%= link_to('Login', new_user_session_path) %></span>
 <% end %>

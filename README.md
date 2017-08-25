@@ -4,17 +4,20 @@ Instagram knock off
 
 ## Functionality
 - [x] User signup / in / out / edit / delete
-- [x] User can post photos
+- [x] User can post / delete photos
 - [x] Home feed of photos
-- [x] User account feed
+- [x] User account feed of photos
+- [x] Styling
+- [x] Hosting
+- [x] README
 
 ## To do
+- [ ] Use AWS for photostorage
+- [ ] User profile photo
+- [ ] Page of existing users
 - [ ] User can write comments
 - [ ] User can like photos
 - [ ] User can follow other users
-- [ ] Styling
-- [ ] Hosting
-- [ ] README
 
 ## Installation
 * git clone git@github.com:langphil/instagram-challenge.git
