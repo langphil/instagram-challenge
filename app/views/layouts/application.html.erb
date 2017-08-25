@@ -27,7 +27,6 @@
             <%= render 'devise/menu/login_items' %>
           </div>
         </div>
-        <!-- <a class="inline active" href="#">Profile</a> -->
       </li>
     </ul>
     <div class="container">
@@ -36,8 +35,8 @@
           <div class="center-box">
             <p class="notice"><%= notice %></p>
             <p class="alert"><%= alert %></p>
+            <%= yield %>
           </div>
-          <%= yield %>
         </div>
       </div>
     </div>
