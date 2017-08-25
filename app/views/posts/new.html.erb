@@ -1,0 +1,14 @@
+<div class="center-box">
+  <h2>New post</h2>
+
+  <%= form_for(@post, multipart: true) do |f| %>
+    <div class="field">
+      <%= f.file_field :image %>
+      <%= f.text_field :caption %>
+    </div><br>
+    <div class="actions">
+      <%= f.submit 'Upload' %>
+      <!-- <%= link_to 'Return to photos', posts_path, class: 'button' %> -->
+    </div>
+  <% end %>
+</div>

@@ -1,8 +1,26 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.instagram-logo {
-  text-align: center;
-  width: 200px;
-  margin-bottom: 2em;
+.img-box {
+  border: #e6e6e6 1px solid;
+  margin-bottom: 3em;
+
+  p {
+    padding: 0.8em 0 0 0.8em;
+  }
+}
+
+.img-head {
+
+}
+
+.img-body {
+
+}
+
+.img-bottom {
+
+  .img-caption {
+    padding-left: 0.8em;
+  }
 }
