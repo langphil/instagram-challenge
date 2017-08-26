@@ -5,6 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Use aws for image hosting
+gem 'aws-sdk', '~> 2.3'
 # Use Bootstrap for CSS stlying
 gem 'bootstrap', '~> 4.0.0.beta'
 # Use Devise for user management
