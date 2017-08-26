@@ -5,6 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Use for testing of environment variables
+gem 'dotenv-rails', groups: [:development, :test]
 # Use aws for image hosting
 gem 'aws-sdk', '~> 2.3'
 # Use Bootstrap for CSS stlying
