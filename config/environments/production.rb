@@ -1,5 +1,5 @@
 Rails.application.configure do
-  p S3_BUCKET_NAME
+
   # Settings specified here will take precedence over those in config/application.rb.
   config.paperclip_defaults = {
     storage: :s3,
